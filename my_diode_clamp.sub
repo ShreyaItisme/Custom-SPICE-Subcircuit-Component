@@ -1,0 +1,6 @@
+* File: my_diode_clamp.sub
+.SUBCKT my_diode_clamp IN OUT GND
+D1 IN OUT DMOD
+R1 OUT GND 10k
+.MODEL DMOD D(Is=1e-14 Rs=0.5)
+.ENDS my_diode_clamp
